@@ -45,7 +45,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     func loadMainBuilding() {
         let boxNode = SCNNode()
         let box = SCNBox(width: 3, height: 1, length: 1, chamferRadius: 0)
-        box.firstMaterial?.diffuse.contents = #colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1)
+        box.firstMaterial?.diffuse.contents = #colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1) // Можно создать массив цветов для коробки с разными расцветками сторон
         boxNode.geometry = box
         boxNode.position.y += 0.001
         
